@@ -20,7 +20,7 @@ function Navbar({searchTerm, setSearchTerm, user}) {
                 className={"p-2 w-full bg-white outline-none"}/>
             </div>
             <div className={"flex gap-3"}>
-                <Link to={`/user-profile/${user?.id}`} className={"hidden md:block"}>
+                <Link to={`/home/user-profile/${user?._id}`} className={"hidden md:block"}>
                     <img src={user.image} alt={"user"} className={"rounded-lg h-12 w-14"} />
                 </Link>
                 <Link to={`/home/create-pin`} className={"bg-black text-white rounded-lg w-12 h-12 " +

@@ -45,7 +45,7 @@ function UserProfile() {
             <div className={"flex flex-col pb-5"}>
                 <div className={"relative flex flex-col mb-7"}>
                     <div className={"flex flex-col justify-center items-center"}>
-                        <img src={randomImage} className={"w-full h-100 2xl:h-510 shadow-lg object-cover"}
+                        <img src={randomImage} className={"w-full h-100  shadow-lg object-cover"}
                              alt={"banner-pic"}
                         />
                         <img src={user.image}

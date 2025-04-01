@@ -27,7 +27,7 @@ function LoginForm() {
 
     async function onSubmit(data) {
 
-        const response = await fetch("http://localhost:3000/api/authentication/login", {
+        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/authentication/login`, {
             method: "POST",
             body: JSON.stringify({
                 ...data,
